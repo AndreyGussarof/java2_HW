@@ -1,37 +1,61 @@
 package java2_HW.homework1;
 
-public class Cat {
-    private String name;
-    private double catJumpHeight ;
-    private int catRunLength ;
+public class Cat implements Athletes{
 
-    public Cat(String name, double catJumpHeight, int catRunLength) {
+
+    String name;
+    int maxJumpHeight;
+    int maxRunLength;
+    boolean onCompetition;
+
+
+
+    public Cat(String name, int maxJumpHeight, int maxRunLength) {
         this.name = name;
-        this.catJumpHeight = catJumpHeight;
-        this.catRunLength = catRunLength;
+        this.maxJumpHeight = maxJumpHeight;
+        this.maxRunLength = maxRunLength;
+        this.onCompetition = true;
+    }
+
+    public Cat(String name) {
+        this(name,5,5);
+        this.name = name;
+    }
+
+    @Override
+    public void run(int runLength) {
+
+        if (runLength <= maxRunLength) {
+            System.out.println(name + "was able to run" );
+        } else {
+            System.out.println(name + " could not run ");
+            onCompetition = false;
+        }
 
     }
 
-    public  void jump (int wallheight) {
-        if (catJumpHeight >= wallheight ){
-            System.out.println(name + " jump " + catJumpHeight  );
-        }
-        else
-        {System.out.println(name + " can not jump "  );
+
+    @Override
+    public void jump(int jumpHeight) {
+
+        if (jumpHeight <= maxJumpHeight) {
+            System.out.println(name + " was able to jump");
+        } else {
+            System.out.println(name + " could not jump ");
+            onCompetition = false;
         }
 
-        System.out.println(name + " jump " + catJumpHeight  );
     }
 
-    public  void run(int treadmillength ) {
-        if (catJumpHeight >= treadmillength ){
-            System.out.println(name + " run " + catRunLength  );
-        }
-        else
-        {System.out.println(name + " can not run "  );
-        }
+    @Override
+    public boolean onCompetition() {
+        return false;
+    }
 
-        System.out.println(name + " jump " + catRunLength  );
+    @Override
+    public void info() {
+        System.out.println(name + onCompetition );
+
     }
 
 

@@ -1,25 +1,17 @@
 package java2_HW.homework1;
 
-public class Robot implements Athletes {
-
+public class Sportsman implements Athletes {
 
     String name;
     int maxJumpHeight;
     int maxRunLength;
     boolean onCompetition;
 
-
-
-    public Robot(String name, int maxJumpHeight, int maxRunLength) {
+    public Sportsman(String name, int maxJumpHeight, int maxRunLength, boolean onCompetition) {
         this.name = name;
         this.maxJumpHeight = maxJumpHeight;
         this.maxRunLength = maxRunLength;
-        this.onCompetition = true;
-    }
-
-    public Robot(String name) {
-
-        this.name = name;
+        this.onCompetition = onCompetition;
     }
 
     @Override
@@ -43,6 +35,7 @@ public class Robot implements Athletes {
         } else {
             System.out.println(name + " could not jump ");
             onCompetition = false;
+
         }
 
     }
