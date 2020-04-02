@@ -4,9 +4,13 @@ package java2_HW.homework2;
 import java.util.Arrays;
 
 public class Main {
+
+
+
     int i;
     int j;
     int arr2[][];
+
 
     public static void main(String[] args) {
 
