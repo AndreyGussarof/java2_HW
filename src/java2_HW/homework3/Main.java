@@ -4,31 +4,17 @@ import java.util.*;
 
 public class Main {
 
+    public static void main(String[] args) {
 
-    Phonebook book = new Phonebook ();
+        Phonebook book = new Phonebook ();
+book.add ("Иванов", 123);
+book.add("Петров", 223);
+book.add("Сидоров", 223);
+book.add("Иванов", 423);
+book.add("Петров", 523);
 
-
-
-
-
+book.get("Иванов");
+    }
 
 }
-
-
-
-
-//        add("Иванов", 123);
-//        add("Петров", 223);
-//        add("Сидоров", 323);
-//        add("Иванов", 423);
-//        add("Петров", 523);
-
-
-
-
-
-
-
-
-
 
