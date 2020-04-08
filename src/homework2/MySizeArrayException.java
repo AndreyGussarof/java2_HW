@@ -1,4 +1,4 @@
-package java2_HW.homework2;
+package homework2;
 
 public class MySizeArrayException extends Throwable {
     private int i;

@@ -1,9 +1,7 @@
-package java2_HW.homework3;
+package homework3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 public class Phonebook {
 

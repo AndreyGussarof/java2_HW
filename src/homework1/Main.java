@@ -1,8 +1,8 @@
-package java2_HW.homework1;
+package homework1;
 
-import java2_HW.homework1.Obstacle.Obstacle;
-import java2_HW.homework1.Obstacle.Run;
-import java2_HW.homework1.Obstacle.Wall;
+import homework1.Obstacle.Obstacle;
+import homework1.Obstacle.Run;
+import homework1.Obstacle.Wall;
 
 public class Main {
     public static void main(String[] args) {

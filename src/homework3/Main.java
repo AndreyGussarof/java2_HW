@@ -1,6 +1,4 @@
-package java2_HW.homework3;
-
-import java.util.*;
+package homework3;
 
 public class Main {
 

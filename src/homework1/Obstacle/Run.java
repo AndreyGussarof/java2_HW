@@ -1,6 +1,6 @@
-package java2_HW.homework1.Obstacle;
+package homework1.Obstacle;
 
-import java2_HW.homework1.Athletes;
+import homework1.Athletes;
 
 public class Run extends Obstacle {
     int length;
