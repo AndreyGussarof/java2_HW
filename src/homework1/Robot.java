@@ -1,6 +1,6 @@
-package java2_HW.homework1;
+package homework1;
 
-public class Cat implements Athletes{
+public class Robot implements Athletes {
 
 
     String name;
@@ -10,15 +10,15 @@ public class Cat implements Athletes{
 
 
 
-    public Cat(String name, int maxJumpHeight, int maxRunLength) {
+    public Robot(String name, int maxJumpHeight, int maxRunLength) {
         this.name = name;
         this.maxJumpHeight = maxJumpHeight;
         this.maxRunLength = maxRunLength;
         this.onCompetition = true;
     }
 
-    public Cat(String name) {
-        this(name,5,5);
+    public Robot(String name) {
+
         this.name = name;
     }
 
@@ -57,6 +57,4 @@ public class Cat implements Athletes{
         System.out.println(name + onCompetition );
 
     }
-
-
 }

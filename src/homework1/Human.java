@@ -1,4 +1,4 @@
-package java2_HW.homework1;
+package homework1;
 public class Human implements Athletes {
 
 
